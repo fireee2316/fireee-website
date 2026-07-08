@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- removes /index.html from the website -->
+    <script>
+      if (window.location.pathname.endsWith('/index.html')) {
+        window.location.replace(window.location.pathname.replace(/index\.html$/, ''));
+      }
+    </script>
+    
     <title>fireee</title>
     <meta name="description" content="Personal site for fireee.">
     <meta property="og:image" content="https://fireee.cgd.cx/icons/favicon-32x32.png">

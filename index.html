@@ -29,47 +29,26 @@
     <meta property="og:description" content="fireee's personal site.">
     <meta name="twitter:card" content="summary_large_image">
   </head>
-  <body style ="
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
-    padding-top: 70px;
-    background-image: url('imgs/venus-crop-tall.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  ">
 
-    <!-- columns -->
-    
-   <div style="display: flex; flex-direction: row; justify-content: center; gap: 100px; margin-top: 70px;">
-    <div style="width: 40%; padding: 20px; box-sizing: border-box; color: white;">
-      Left column
+  <body style="margin: 0; background-image: url('imgs/img.png'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+    <!-- Fixed header -->
+    <div style="position: fixed; top: 0; left: 0; width: 100%; background-color: #222; padding: 15px 0; text-align: center; z-index: 1000;">
+      Header content
     </div>
-    <div style="width: 40%; padding: 20px; box-sizing: border-box; color: white;">
-      Right column
+  
+    <!-- Content starts below the header, flows top to bottom naturally -->
+    <div style="padding-top: 90px;">
+  
+      <div style="display: flex; flex-direction: row; justify-content: center; gap: 100px;">
+        <div style="width: 40%; padding: 20px; box-sizing: border-box;">
+          Left column
+        </div>
+        <div style="width: 40%; padding: 20px; box-sizing: border-box;">
+          Right column
+        </div>
+      </div>
+  
     </div>
-  </div>
-      
-    <!-- sticky header -->
-    <div style="
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #222;
-      color: white;
-      padding: 15px 0;
-      text-align: center;
-      z-index: 1000;
-    ">
-      <a href="index.html" style="color: white; margin: 0 15px; text-decoration: none;">Home</a>
-      <a href="cv.html" style="color: white; margin: 0 15px; text-decoration: none;">CV</a>
-      <!-- <a href="qa.html" style="color: white; margin: 0 15px; text-decoration: none;">Q&A</a> -->
-    </div>
+  
   </body>
 </html>

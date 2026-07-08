@@ -35,9 +35,12 @@
 
   <body style="margin: 0; background-image: url('imgs/venus-crop-tall.png'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
     <!-- Fixed header -->
-    <div class="sg" style="color: white; position: fixed; top: 0; left: 0; width: 100%; background-color: #222; padding: 15px 0; text-align: center; z-index: 1000;">
-      Header content
-    </div>
+    <div id="site-header"></div>
+    <script>
+      fetch('/header.html')
+        .then(r => r.text())
+        .then(html => { document.getElementById('site-header').innerHTML = html; });
+    </script>
   
     <!-- Content starts below the header, flows top to bottom naturally -->
     <div class="sg" style="padding-top: 90px; color:white;">

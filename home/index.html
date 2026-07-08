@@ -5,7 +5,7 @@
     <style>
       @font-face {
         font-family: 'SG';
-        src: url('fonts/ScienceGothic-VariableFont_CTRS,slnt,wdth,wght.ttf') format('truetype');
+        src: url('/fonts/ScienceGothic-VariableFont_CTRS,slnt,wdth,wght.ttf') format('truetype');
       }
       .sg {
         font-family: 'SG';
@@ -14,14 +14,14 @@
     
     <!-- removes /index.html from the website -->
     <script>
-      if (window.location.pathname.endsWith('/index.html')) {
+      if (window.location.pathname.endsWith('/home/index.html')) {
         window.location.replace(window.location.pathname.replace(/index\.html$/, ''));
       }
     </script>
     
     <title>fireee</title>
     <meta name="description" content="Personal site for fireee.">
-    <meta property="og:image" content="https://fireee.cgd.cx/icons/favicon-32x32.png">
+    <meta property="og:image" content="https://fireee.cgd.cx/favicon/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -33,7 +33,7 @@
     <meta name="twitter:card" content="summary_large_image">
   </head>
 
-  <body style="margin: 0; background-image: url('imgs/venus-crop-tall.png'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+  <body style="margin: 0; background-image: url('/imgs/venus-crop-tall.png'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
     <!-- Fixed header -->
     <div id="site-header"></div>
     <script>

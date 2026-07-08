@@ -1,13 +1,17 @@
-const links = [
-  { text: "Home", href: "/" },
-  { text: "About", href: "/" },
-  { text: "Contact", href: "/" },
-  { text: "Projects", href: "/" },
-  { text: "Posts", href: "/" },
-  { text: "CV", href: "/" },
-
-];
-
-document.getElementById('site-header').innerHTML = links
-  .map(l => `<a href="${l.href}">${l.text}</a>`)
-  .join(' ');
+<!-- header.html -->
+<div
+  class="sg"
+  style="
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+  "
+>
+  Header content
+</div>

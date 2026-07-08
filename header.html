@@ -1,26 +1,22 @@
 <!-- header.html -->
-
 <style>
   .site-header a {
     color: white;
     text-decoration: none;
   }
-</style>
-
-<style>
   .nav-box {
-    color: white;
-    text-decoration: none;
     padding: 8px 16px;
     background-color: #444;
     border-radius: 6px;
+  }
+  .nav-slot {
     flex: 1;
-    text-align: center;
+    display: flex;
+    justify-content: center;
   }
 </style>
-
 <div
-  class="sg"
+  class="sg site-header"
   style="
     color: white;
     position: fixed;
@@ -28,18 +24,14 @@
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
     background-color: #222;
     padding: 15px 0;
-    text-align: center;
     z-index: 1000;
   "
 >
-  <a href="/" class="nav-box">Home</a>
-  <a href="/" class="nav-box">CV</a>
-  <a href="/" class="nav-box">CGD Home</a>
-  <a href="/" class="nav-box">Projects</a>
-  <a href="/" class="nav-box">Coming soon...</a>
-
+  <div class="nav-slot"><a href="/" class="nav-box">Home</a></div>
+  <div class="nav-slot"><a href="/" class="nav-box">CV</a></div>
+  <div class="nav-slot"><a href="/" class="nav-box">CGD Home</a></div>
+  <div class="nav-slot"><a href="/" class="nav-box">Projects</a></div>
+  <div class="nav-slot"><a href="/" class="nav-box">Coming soon...</a></div>
 </div>
- 

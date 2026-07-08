@@ -1,0 +1,13 @@
+const links = [
+  { text: "Home", href: "/" },
+  { text: "About", href: "/" },
+  { text: "Contact", href: "/" },
+  { text: "Projects", href: "/" },
+  { text: "Posts", href: "/" },
+  { text: "CV", href: "/" },
+
+];
+
+document.getElementById('site-header').innerHTML = links
+  .map(l => `<a href="${l.href}">${l.text}</a>`)
+  .join(' ');
